@@ -2,7 +2,7 @@
   "name": "typegraphql-prisma",
   "version": "0.30.0",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "npm run build && (husky install || true)",
     "build": "tsc",
     "package:build": "./package.sh",
     "package:publish": "cd package *&& npm publish",
